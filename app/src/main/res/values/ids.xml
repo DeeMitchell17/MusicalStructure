@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tracks" type="id" />
+    <item name="albums" type="id" />
+    <item name="now_playing" type="id" />
+</resources>
