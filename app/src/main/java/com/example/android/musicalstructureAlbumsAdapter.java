@@ -10,32 +10,12 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomGrid extends ArrayAdapter<String> {
-    private final Context mContext;
-    private final String album[];
-    private final int[] Imageid;
-
-    public CustomGrid(Context c, String[] album, int[] Imageid) {
-        mContext = c;
-        this.Imageid = Imageid;
-        this.album = album;
+public class AlbumsAdapter extends ArrayAdapter<Albums> {
+   
+    public CustomGrid(ArrayList<Albums>, String[] album, int[] Imageid) {
+       super(0, albums)
     }
-
-    @Override
-    public int getCount() {
-        return album.length;
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return null;
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return 0;
-    }
-
+    
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
