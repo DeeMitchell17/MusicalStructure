@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/yellowtail"
         android:text="@string/summer_nights"
+        android:layout_marginTop="24dp"      
         android:textColor="#34e89e"
         android:gravity="center"
         android:textSize="50sp" />
@@ -35,38 +36,17 @@
         android:fontFamily="@font/yellowtail"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="48dp"
         android:paddingBottom="30dp"
         android:textColor="#34e89e"
         android:text="@string/tracks"
-        android:textSize="40sp" />
+        android:textSize="50sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray" />
-
-    <TextView
-        android:id="@+id/albums"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/CategoryStyle"
-        android:fontFamily="@font/yellowtail"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="16dp"
-        android:paddingBottom="30dp"
-        android:text="@string/albums"
-        android:textColor="#34e89e"
-        android:textSize="40sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray" />
-
 
     <TextView
         android:id="@+id/now_playing"
@@ -76,11 +56,11 @@
         android:fontFamily="@font/yellowtail"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:paddingBottom="40dp"
         android:textColor="#34e89e"
         android:text="@string/now_playing"
-        android:textSize="40sp" />
+        android:textSize="50sp" />
 
     <View
         android:layout_width="match_parent"
