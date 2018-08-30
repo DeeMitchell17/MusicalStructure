@@ -25,17 +25,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView albums = (TextView) findViewById(R.id.albums);
-
-        albums.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent albumsIntent = new Intent(MainActivity.this, AlbumsActivity.class);
-                startActivity(albumsIntent);
-            }
-        });
-
         TextView nowPlaying = (TextView) findViewById(R.id.now_playing);
 
         nowPlaying.setOnClickListener(new View.OnClickListener(){
