@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -31,24 +30,24 @@ public class TracksActivity extends AppCompatActivity {
         });
 
 
-        ArrayList<String> words = new ArrayList<>();
-        words.add("1. Make Luv");
-        words.add("2. In This Life");
-        words.add("3. Luv 2 U");
-        words.add("4. Music Sounds Better With You");
-        words.add("5. My Love");
-        words.add("6. Show Me Love");
-        words.add("7. I Wanna Feel");
-        words.add("8. Let You");
-        words.add("9. Freak");
-        words.add("10. Ghost Voices");
+        ArrayList<Songs> songs = new ArrayList<>();
+        songs.add(new Songs("Make Luv (2003)", "Room 5", R.drawable.coverart1));
+        songs.add(new Songs("In This Life (2006)", "Kaskade", R.drawable.coverart2));
+        songs.add(new Songs("Luv 2 U (2004)", "Junior Jack",R.drawable.coverart3));
+        songs.add(new Songs("Music Sounds Better With You (1998)","Stardust", R.drawable.coverart4));
+        songs.add(new Songs("My Love (2015)","Route 94 & Jess Glynne", R.drawable.coverart5));
+        songs.add(new Songs("Show Me Love (1993)", "Robin S.", R. drawable.coverart6));
+        songs.add(new Songs("I Wanna Feel (2014)","SecondCity", R.drawable.coverart7));
+        songs.add(new Songs("Let You (2012)","AppleBottom", R.drawable.coverart8));
+        songs.add(new Songs("Freak (2013)","Route 94 & SecondCity", R.drawable.coverart9));
+        songs.add(new Songs("Ghost Voices (2017)","Virtual Self", R.drawable.coverart10));
 
 
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        SongsAdapter songsAdapter = new SongsAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(songsAdapter);
 
     }
 
